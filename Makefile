@@ -6,7 +6,7 @@ all: $(PROGS)
 ifneq (,$(findstring MINGW,$(shell uname -s)))
 LIBS=-lz -liconv -lws2_32
 else
-LIBS=-lz
+LIBS=-lz -liconv
 endif
 
 .SECONDEXPANSION:
