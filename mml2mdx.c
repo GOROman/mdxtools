@@ -4,6 +4,8 @@
 #include <errno.h>
 #ifdef __linux__
 #include <linux/limits.h>
+#else
+#define PATH_MAX        4096    /* # chars in a path name including nul */
 #endif
 #include "mdx_compiler.h"
 #include "cmdline.h"

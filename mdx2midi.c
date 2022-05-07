@@ -2,7 +2,10 @@
 #include <string.h>
 #ifdef __linux__
 #include <linux/limits.h>
+#else
+#define PATH_MAX        4096    /* # chars in a path name including nul */
 #endif
+
 #include "cmdline.h"
 #include "mdx.h"
 #include "tools.h"

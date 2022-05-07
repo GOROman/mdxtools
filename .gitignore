@@ -42,3 +42,7 @@ mdx2pcm
 adpcm-encode
 adpcm-decode
 pdxinfo
+.vscode
+mididump
+mkpdx
+mdx2midi
